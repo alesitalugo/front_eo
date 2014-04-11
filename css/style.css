@@ -71,7 +71,6 @@ html, body{
 	height: 100%;
 }
 .slider-item{
-	background-image: url(../images/home/carousel01.jpg);
 	background-size: cover;
 	height: inherit;
 	width: 100%;
@@ -79,7 +78,19 @@ html, body{
 	position: absolute;
 	top: 0;	
 	background-position: center;
+	display: none;
 }
+.active_slide{
+	display: block;
+}
+#slider01 {
+	background-image: url(../images/home/carousel01.jpg);	
+}
+
+#slider02 {
+	background-image: url(../images/home/carousel02.jpg);	
+}
+
 .slider-content{
 	width: 980px;
 	margin: 0 auto;
@@ -291,6 +302,7 @@ html, body{
 	width: 680px;
 	height: auto;
 	overflow: hidden;
+	float: left;
 }
 #search_button{
 	position: absolute;
