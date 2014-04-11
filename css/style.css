@@ -358,6 +358,9 @@ background: url('../images/sprite01.png') no-repeat -288px -126px;
 	width: 29px;
 	height: 24px;
 }
+#widget_share{
+	margin: 5px 0 ;
+}
 #widget_news .icon{
 	background: url('../images/sprite01.png') no-repeat -116px -127px;
 	width: 29px;
@@ -382,6 +385,7 @@ background: url('../images/sprite01.png') no-repeat -288px -126px;
 	font-size: 14px;
 	height: 30px;
 	margin: 5px 0;
+	display: none;
 }
 .article_post{
 	width: 260px;

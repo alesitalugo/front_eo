@@ -35,7 +35,10 @@ var SITE = {
 			timer = setTimeout(function(){
 				transition(0,1);
 			}, timeTransition);
+			
+			*/
 
+			/*
 			$('.dots_nav .dot').each(function(j){
 				var a = $(this);
 				$(this).click(function(f){
@@ -59,7 +62,12 @@ var SITE = {
 					}
 					return false;
 				});
-			});	*/
+			});	
+				*/
+
+			$('#widget_news').on('click', function(){
+				$('#news').fadeIn(100);
+			});
 		}
 	},
 	home: {
