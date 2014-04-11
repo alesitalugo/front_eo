@@ -78,6 +78,7 @@ html, body{
 	height: 100%;
 	position: absolute;
 	top: 0;	
+	background-position: center;
 }
 .slider-content{
 	width: 980px;
@@ -103,7 +104,7 @@ html, body{
 }
 .slider-content .slider-abstract p {
 	color: #333333;
-	font-size: 16px;
+	font-size: 14px;
 	margin: 20px 10px;
 }
 .slider-nav{
@@ -144,6 +145,7 @@ html, body{
 	width: 100%;
 	height: auto;
 	/*overflow: hidden;*/
+	clear: both;
 }
 #content {
 	width: 980px;
@@ -153,7 +155,7 @@ html, body{
 	width: 300px;
 	float: right;
 	position: relative;
-	top: -40px;
+	top: 98px;
 }
 #footer{
 	clear: both;
@@ -381,7 +383,7 @@ background: url('../images/sprite01.png') no-repeat -288px -126px;
 	width: 250px;
 	height: 250px;
 	margin-bottom: 20px;
-	
+
 }
 .circle .image_article{
 	-webkit-border-radius: 50em;
@@ -433,6 +435,9 @@ background: url('../images/sprite01.png') no-repeat -288px -126px;
 	background-color: #339999;
 	color: #fff;
 }
+.article_post .button_more .view-more span{
+	color: #000;
+}
 .article_post .date{
 	color: #70bfb5;
 	font-size: 16px;
@@ -442,5 +447,24 @@ background: url('../images/sprite01.png') no-repeat -288px -126px;
 	margin: 10px 0;
 }
 .menu_responsive_button{
+	display: none;
+}
+
+#assets{
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	top: -40px;
+}
+.main-assets{
+	width: 300px;
+	float: right;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	height: 300px;
+	overflow: hidden;
+}
+.signature_home{
 	display: none;
 }
