@@ -1,0 +1,59 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
+	#main-menu{
+		height: 100%;
+		width: 0%;
+		top: 0;
+		background-color: #333;
+		position: fixed;
+		z-index: 2000;
+		right: 0;
+	}
+	#menubar{
+		width: 980px;
+		margin: 0 auto;
+		height: 100%;
+		position: fixed;
+
+	}
+	.menu-desktop .divide{
+		display: none;
+	}
+	.menu-responsive{
+		/*display: none;*/
+	}
+	.menu-desktop .menu-item .menu-link{
+		color: #fff;
+		margin: 15px auto;
+		display: block;
+		width: auto;
+		text-align: center;
+	}
+	.menu-responsive .menu-item{
+		list-style-type: none;
+		float: none;
+		padding: 10px 13px;
+		position: relative;
+		height: 48px;
+		border-bottom: 1px dashed #fff;
+	}
+	#logotipo {
+		margin: 0px 3px;
+		padding: 0;
+		/* float: left; */
+		position: absolute;
+		top: 10px;
+		left: -310px;
+	}
+	 .menu {
+		float: none;
+	}
+	.menu_responsive_button{
+		background-image: url(../images/sprite01.png) no-repeat -386px -116px;
+		width: 9px;
+		display: block;
+		height: 37px;
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
+
+}

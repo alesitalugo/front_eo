@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'AmericanTypewriter';
+	src: url('AmericanTypewriter.eot?') format('eot'), 
+	     url('AmericanTypewriter.woff') format('woff'), 
+	     url('AmericanTypewriter.ttf')  format('truetype'),
+	     url('AmericanTypewriter.svg#AmericanTypewriter') format('svg');
+}
