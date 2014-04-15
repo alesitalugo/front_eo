@@ -4,6 +4,7 @@ html, body{
 #main-wrap{
 	width: 100%;
 }
+
 #header{
 	background-color: #a5dbd4;
 	height: 83px;
@@ -13,6 +14,7 @@ html, body{
 	z-index: 999;
 	top:0;
 }
+
 #menubar{
 	width: 980px;
 	margin: 0 auto;
@@ -52,13 +54,116 @@ html, body{
 .menu-desktop .menu-item .menu-link:hover{
 	text-decoration: underline;
 }
-
 #wrapper{
 	position: relative;
 	top: 88px;
 	width: 100%;
 	height: auto;
 }
+
+#wrap-content{
+	width: 100%;
+	height: auto;
+	/*overflow: hidden;*/
+	clear: both;
+}
+#assets{
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 999;
+	height: 40px;
+}
+.main-assets{
+	width: 300px;
+	float: right;
+	height: 134px;
+	background: #fff;
+	position: absolute;
+	top: -15px;
+	/* height: 300px; */
+	overflow: hidden;
+	right: 0;
+}
+.assets-home{
+	z-index:1;
+}
+.assets-home  .main-assets{
+	top:-70px;
+}
+#content {
+	width: 980px;
+	margin: 0 auto;	
+	height: auto;
+		overflow: hidden;
+}
+
+#sidebar {
+	width: 300px;
+	float: right;
+	position: relative;
+	top: 25px;
+}
+#footer{
+	clear: both;
+	/* position: absolute; */
+	height: 125px; 
+	bottom: 0;
+	width: 100%;
+	background-image: url(../images/lechuga.png);
+}
+#footer .content-info{
+	width: 980px;
+	margin: 0 auto;
+
+}
+#footer .content-info .info{
+	float: left;
+}
+#footer .content-info .phone{
+	float: right;
+	margin-top: 45px;
+	margin-right: 10px;
+	width: 240px;
+}
+#footer .content-info .phone p{
+	float: right;
+	color: #6dbeb3;
+	font-size: 30px;
+	font-family: 'AmericanTypewriter';	
+	font-weight: bold;
+	margin: 0;	
+}
+#footer .content-info .phone .icon{
+	background: url('../images/sprite01.png') no-repeat -235px -124px;
+	width: 27px;
+	height: 22px;
+	display: block;
+	float: left;
+	margin-top: 6px;
+	margin-right: 10px;
+}
+#footer .content-info .info {
+	text-align: right;
+	margin-top: 35px;
+	margin-left: 10px;
+	width: 240px;
+}
+#footer .content-info .info p {
+	color: #fff;
+	font-size: 12px;
+}
+#footer .content-info .info a{
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+}
+#footer .content-info .info a:hover{
+	color: #6dbeb3;
+}
+
+/*SLIDER */
+
 #slider{
 	clear: both;
 	height: 405px;
@@ -152,77 +257,11 @@ html, body{
 	width: 233px;
 	height: 61px;
 }
-#wrap-content{
-	width: 100%;
-	height: auto;
-	/*overflow: hidden;*/
-	clear: both;
-}
-#content {
-	width: 980px;
-	margin: 0 auto;	
-}
-#sidebar {
-	width: 300px;
-	float: right;
-	position: relative;
-	top: 98px;
-}
-#footer{
-	clear: both;
-	/* position: absolute; */
-	height: 125px; 
-	bottom: 0;
-	width: 100%;
-	background-image: url(../images/lechuga.png);
-}
-#footer .content-info{
-	width: 980px;
-	margin: 0 auto;
 
-}
-#footer .content-info .info{
-	float: left;
-}
-#footer .content-info .phone{
-	float: right;
-	margin-top: 45px;
-	margin-right: 10px;
-}
-#footer .content-info .phone p{
-	float: right;
-	color: #6dbeb3;
-	font-size: 30px;
-	font-family: 'AmericanTypewriter';	
-	font-weight: bold;
-	margin: 0;	
-}
-#footer .content-info .phone .icon{
-	background: url('../images/sprite01.png') no-repeat -235px -124px;
-	width: 27px;
-	height: 22px;
-	display: block;
-	float: left;
-	margin-top: 6px;
-	margin-right: 10px;
-}
-#footer .content-info .info {
-	text-align: right;
-	margin-top: 35px;
-	margin-left: 10px;
-}
-#footer .content-info .info p {
-	color: #fff;
-	font-size: 12px;
-}
-#footer .content-info .info a{
-	color: #fff;
-	font-size: 12px;
-	text-decoration: none;
-}
-#footer .content-info .info a:hover{
-	color: #6dbeb3;
-}
+
+
+
+
 .sidebar-content{
 
 }
@@ -466,21 +505,152 @@ background: url('../images/sprite01.png') no-repeat -288px -126px;
 	display: none;
 }
 
-#assets{
-	width: 980px;
-	margin: 0 auto;
-	position: relative;
-	top: -40px;
-}
-.main-assets{
-	width: 300px;
-	float: right;
-	background: #fff;
-	position: absolute;
-	right: 0;
-	height: 300px;
-	overflow: hidden;
-}
 .signature_home{
 	display: none;
+}
+
+.signature_section {
+	height: 153px;
+	width: 100%;
+	position: relative;
+}
+.signature_section .sign{
+	/*background: url('../images/sprite01.png') no-repeat -16px -209px;*/
+	width: 239px;
+	height: 20%;
+	margin: 20px auto;
+}
+.signature_section .dotted{
+	width: 41%;
+	/*margin-top: 50px;*/
+	border: 1px dotted #a5dbd4;
+	position: absolute;
+	top:30px;
+	z-index: -1;
+}
+.signature_section .dottedR{
+	left: 0;
+}
+.signature_section .dottedL{
+	right: 0;
+}
+#container  p{
+	font-size: 16px;
+	color: #333;
+}
+#container .entry-info ul {
+
+}
+#container .entry-info ul li {
+	color: #a5dbd4;
+	list-style-type: none;
+}
+#container .entry-info ul li a{
+	color: #a5dbd4;
+	text-decoration: none;
+}
+#container .entry-info a {
+	color: #a5dbd4;
+	text-decoration: none;
+}
+#container .entry-info a:hover {
+	color: #333;
+}
+.mail {
+	margin: 10px;
+	height: 35px;
+    cursor: pointer;	
+    width: 260px;
+}
+.mail .icon{
+	float: left;
+	background: url(../images/sprite01.png) no-repeat -325px -65px;
+	width: 26px;
+	height: 18px;
+}
+.mail a{
+	color: #333;
+	text-decoration: none;
+	float: right;
+    font-family: 'AmericanTypewriter';
+    font-size: 14px;
+}
+/*ABOUT STYLE*/
+
+#sub-header{
+	clear: both;
+	height: 50px;
+	width: 100%;
+	position: relative;
+}
+
+.sub-header {
+   float: left;
+	height: 50px;
+	position: relative;
+	/* top: -65px; */
+	width: 100%;
+	/*z-index: 999;*/
+}
+
+.line-left {
+    background-color: #DCDDCD;
+    float: left;
+    height: 50px;
+    width: 10%;
+    
+}
+.line-center {
+    background-color: #e6e7d5;
+    float: left;
+    height: 67px;
+    position: relative;
+    top: -28px;
+    width: 30%;
+    z-index: 999;
+    text-align:center;
+    line-height:67px;
+}
+
+.line-right {
+    background-color: #DCDDCD;
+    float: left;
+    height: 50px;
+    position: relative;
+    width: 60%;
+	z-index: -7;    
+}
+
+.completedl,.completedr {
+    background: none repeat scroll 0 0 #E6E7D5;
+    height: 78px;
+    position: relative;
+    top: -28px;
+    width: 12px;
+    z-index: 1;
+}
+
+.completedl{
+	float:right;
+	background-image: url("../images/sprite02.png");
+    background-position: -20px 0;
+    z-index: 999;
+
+}
+
+.completedr{
+	float:left;
+	width:13px;
+	background-image: url("../images/sprite02.png");
+    background-position: -334px 0;
+    z-index: 999;
+
+}
+
+.titulo_seccion {
+    font-family: 'AmericanTypewriter';
+    font-size: 2em;
+}
+.entry-info{
+	padding: 20px;
 }

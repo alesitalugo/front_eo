@@ -2,10 +2,39 @@ var SITE = {
 
 	common: {
 		init: function(){
-		
+			var menu_active = 0;
+			var width = $(window).width();
+			var height  = $(window).height();
+			var minWidth = 980;
+			/*responsive functions */
+
+			var responsive = function(){
+				/*$('.menu_responsive_button').on('click', function(){
+				
+					if(menu_active == 0){
+						$('#main-menu').animate({'width':'40%'}, 800);
+						$('#wrapper').animate({'width':'60%'},800);
+						$('#logotipo').animate({'left': '23%'}, 800);
+						$('#header').animate({'width':'60%'},800);
+						menu_active = 1;
+					} else if(menu_active == 1){
+						$('#main-menu').animate({'width':'0%'}, 800);
+						$('#wrapper').animate({'width':'100%'},800);
+						$('#logotipo').animate({'left': '43%'}, 800);
+						$('#header').animate({'width':'100%'},800);
+						menu_active = 0;
+					}
+
+					console.log(menu_active);
+				});*/
+			}
+
+			if (width <= minWidth ){
+				responsive();
+			} 
 			/*CAROUSEL SLIDER HOME FUNCTION*/
 			
-			/*var panels = $('#slider .slider-item'),
+			/*	var panels = $('#slider .slider-item'),
 				timer,
 				timeTransition = 4000,
 				minOpacity =.2;
@@ -36,9 +65,9 @@ var SITE = {
 				transition(0,1);
 			}, timeTransition);
 			
-			*/
+			
 
-			/*
+		
 			$('.dots_nav .dot').each(function(j){
 				var a = $(this);
 				$(this).click(function(f){
@@ -68,7 +97,18 @@ var SITE = {
 			$('#widget_news').on('click', function(){
 				$('#news').fadeIn(100);
 			});
+			
+			
+			/*$('.menu_active').on('click', function(){
+				$(this).removeClass('active');
+				$('#main-menu').animate({'width':'0%'}, 800);
+				$('#wrapper').animate({'width':'100%'},800);
+				$('#logotipo').animate({'left': '43%'}, 800);
+				$('#header').animate({'width':'100%'},800);
+			});*/
+
 		}
+
 	},
 	home: {
 

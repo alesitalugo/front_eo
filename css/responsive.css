@@ -1,5 +1,258 @@
 /*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
+@media only screen and (max-width: 980px){
+	#menubar {
+		width: 100%;
+		margin: 0 auto;
+		height: 100%;
+		position: fixed;
+	}
+	#sub-header{
+		height: 260px;
+	}
+	#main-menu {
+		height: 100%;
+		width: 0%;
+		top:0;
+		background-color: #333;
+		position: fixed;
+		z-index: 2000;
+		right: 0;
+	}
+	.menu-desktop .divide{
+		display: none;
+	}
+	.menu-desktop .menu-item .menu-link{
+		color: #fff;
+		margin: 15px auto;
+		display: block;
+		width: auto;
+		text-align: center;
+	}
+	.menu-responsive .menu-item{
+		list-style-type: none;
+		float: none;
+		padding: 10px 13px;
+		position: relative;
+		height: 48px;
+		border-bottom: 1px dotted #fff;
+	}
+	#logotipo{
+		margin: 0px 3px;
+		padding: 0;
+		/* float: left; */
+		position: fixed;
+		top: 15px;
+		left: 43%;
+	}
+	#content {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#container{
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+	#sidebar {
+		width: 300px;
+		float: none; 
+		margin: 0 auto;
+		position: relative;
+		top: 0;
+	}
+	.slider-item {
+		background-image: url(../images/home/carousel01.jpg);
+		background-size: cover;
+		height: inherit;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		background-position: center;
+	}
+	.slider-content {
+		width: 50%;
+		margin: 0;
+		position: relative;
+		left: 10px;
+		top: 75px;
+		}
+		#assets {
+		width: 95%;
+		margin: 0 auto;
+		position: relative;
+		top: -23px;
+		height: 90px;
+	}
+	.column {
+		margin: 0 auto;
+		width: 90%;
+	}
+	#footer{
+		/*padding-top: 5px;*/
+	}
+	#footer .content-info {
+		width: 70%;
+	}
+	#footer .content-info .phone {
+		float: none; 
+		margin: 0px auto;
+		/* margin-right: auto; */
+		/*width: 43%;*/
+	}
+	#footer .content-info .info {
+		float: none;
+		clear: both;
+		margin: 10px auto;
+		padding: 5px;
+	}
+	.menu_responsive_button{
+		background: url(../images/sprite01.png) no-repeat -386px -116px;
+		width: 9px;
+		display: block;
+		height: 37px;
+		/* float: right; */
+		cursor: pointer;
+		margin: 20px 20px;
+		position: absolute;
+		right: 0;
+		z-index: 2000;
+	}
+	.slider-nav{
+		width: 100%;
+	}
+	 .menu {
+		float: none;
+	}
+	.line-left{
+		display: none;
+	}
+	.line-right{
+		display: none;
+	}
+	.sub-header{
+		background-color: #e6e7d5;
+		height: 200px;
+	}
+	.line-center{
+		background-color: #e6e7d5;
+		/* float: left; */
+		/* height: 67px; */
+		/* position: relative; */
+		/* top: -28px; */
+		width: 100%;
+		/* z-index: 999; */
+		text-align: center;
+		line-height: 67px;
+		margin: 0 auto;
+		margin-top: 110px;
+	}
+	.assets-home .main-assets{
+		width: 300px;
+		float: right;
+		height: 134px;
+		background: #fff;
+		position: absolute;
+		top: -5px;
+		/* height: 300px; */
+		overflow: hidden;
+		right: 0;
+	}
+	.main-assets {
+		width: 300px;
+		float: none; 
+		height: 84px;
+		background: #fff;
+		top: 0;
+		overflow: hidden;
+		right: 0;
+		margin: 0 auto;
+		position: relative;
+	}
+	#search{
+		display: none;
+	}
+	#assets {
+		top: 0;
+	}
+}
+@media only screen and (max-width: 760px){
+	#search{
+		display: none;
+	}
+	.column {
+		margin: 0 auto;
+		width: 40%;
+	}
+	#sub-header{
+		height: 260px;
+	}
+	.assets-home .main-assets{
+		width: 300px;
+		float: right;
+		height: 134px;
+		background: #fff;
+		position: absolute;
+		top: -5px;
+		/* height: 300px; */
+		overflow: hidden;
+		right: 0;
+	}
+	.main-assets {
+		width: 300px;
+		float: none; 
+		height: 84px;
+		background: #fff;
+		top: 0;
+		overflow: hidden;
+		right: 0;
+		margin: 0 auto;
+		position: relative;
+	}
+	.menu_responsive_button{
+		background: url(../images/sprite01.png) no-repeat -386px -116px;
+		width: 9px;
+		display: block;
+		height: 37px;
+		/* float: right; */
+		cursor: pointer;
+		margin: 20px 20px;
+		position: absolute;
+		right: 0;
+		z-index: 2000;
+	}
+	#footer{
+		/*padding-top: 5px;*/
+	}
+	#footer .content-info .phone {
+		float: none; 
+		margin: 0px auto;
+		/* margin-right: auto; */
+		/*width: 73%;*/
+	}
+	#footer .content-info {
+		width: 70%;
+	}
+	#footer .content-info .info {
+		float: none;
+		clear: both;
+		margin: 10px auto;
+		padding: 5px;
+	}
+	.slider-nav{
+		width: 100%;
+	}
+	 .menu {
+		float: none;
+	}
+	#assets {
+		top: 0;
+	}
+}
+@media only screen and (max-width: 420px) {
+	#search{
+		display: none;
+	}
 	#main-menu{
 		height: 100%;
 		width: 0%;
@@ -8,6 +261,31 @@
 		position: fixed;
 		z-index: 2000;
 		right: 0;
+	}
+	#sub-header{
+		height: 260px;
+	}
+	.assets-home .main-assets{
+		width: 300px;
+		float: right;
+		height: 134px;
+		background: #fff;
+		position: absolute;
+		top: -5px;
+		/* height: 300px; */
+		overflow: hidden;
+		right: 0;
+	}
+	.main-assets {
+		width: 300px;
+		float: none; 
+		height: 84px;
+		background: #fff;
+		top: 0;
+		overflow: hidden;
+		right: 0;
+		margin: 0 auto;
+		position: relative;
 	}
 	#menubar{
 		width: 100%;
@@ -39,11 +317,11 @@
 	}
 	#logotipo {
 		margin: 0px 3px;
-		padding: 0;	
+		padding: 0;
 		/* float: left; */
-		position: absolute;
-		top: 10px;
-		left: -310px;
+		position: fixed;
+		top: 15px;
+		left: 43%;
 	}
 	 .menu {
 		float: none;
@@ -53,9 +331,12 @@
 		width: 9px;
 		display: block;
 		height: 37px;
-		float: right;
+		/* float: right; */
 		cursor: pointer;
 		margin: 20px 20px;
+		position: absolute;
+		right: 0;
+		z-index: 2000;
 	}
 	.slider-item {
 		background-image: url(../images/home/carousel01.jpg);
@@ -93,8 +374,12 @@
 		width: 95%;
 		margin: 0 auto;
 		position: relative;
-		top: -23px;
+		top: 0px;
 		height: 90px;
+	}
+	.column {
+		margin: 0 auto;
+		width: 300px;
 	}
 	#content {
 		width: 100%;
@@ -118,19 +403,21 @@
 		top: 0;
 	}
 	#footer{
-		padding-top: 5px;
+		/*padding-top: 5px;*/
 	}
 	#footer .content-info .phone {
 		 float: none; 
 		margin: 15px auto;
 		/* margin-right: auto; */
-		width: 73%;
+		/*width: 73%;*/
+	}
+	#footer .content-info {
+		width: 70%;
 	}
 	#footer .content-info .info {
 		float: none;
 		clear: both;
 		margin: 10px auto;
-		width: 50%;
 		padding: 5px;
 	}
 }
