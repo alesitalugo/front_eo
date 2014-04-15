@@ -60,18 +60,23 @@ html, body{
 	width: 100%;
 	height: auto;
 }
-
+#logotipo{
+	position: relative;
+	z-index: 999;
+}
 #wrap-content{
 	width: 100%;
 	height: auto;
 	/*overflow: hidden;*/
 	clear: both;
+	position: relative;
+	z-index: 1;
 }
 #assets{
 	width: 980px;
 	margin: 0 auto;
 	position: relative;
-	z-index: 999;
+	z-index: 1;
 	height: 40px;
 }
 .main-assets{
@@ -93,7 +98,7 @@ html, body{
 }
 #content {
 	width: 980px;
-	margin: 0 auto;	
+	margin: 100px auto;	
 	height: auto;
 		overflow: hidden;
 }
@@ -581,7 +586,8 @@ background: url('../images/sprite01.png') no-repeat -288px -126px;
 	clear: both;
 	height: 50px;
 	width: 100%;
-	position: relative;
+	position: fixed;
+	top:88px;
 }
 
 .sub-header {
