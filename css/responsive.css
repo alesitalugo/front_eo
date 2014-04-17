@@ -4,6 +4,9 @@
 		position: relative;
 		top:0;
 	}
+	.search_button{
+		display: block;
+}
 	#header-article h4 {
 		width: 100%;
 	}
@@ -11,6 +14,7 @@
 		width: 100%;
 		margin: 0 auto;
 		height: 100%;
+		z-index: 11;
 		position: fixed;
 	}
 	.article .sub-header{
@@ -19,9 +23,8 @@
 
 	#sub-header{
 		height: 260px;
-				z-index: -1;
-				display: block !impo;
-
+		z-index: -1;
+		display: block;
 	}
 	#main-menu {
 		height: 100%;
@@ -53,7 +56,6 @@
 	#logotipo{
 		margin: 0px 3px;
 		padding: 0;
-		/* float: left; */
 		position: fixed;
 		top: 15px;
 		left: 43%;
@@ -85,11 +87,11 @@
 		background-position: center;
 	}
 	.slider-content {
-		width: 50%;
+		width: 80%;
 		margin: 0;
 		position: relative;
 		left: 10px;
-		top: 75px;
+		top: 55px;
 		}
 		#assets {
 		width: 95%;
@@ -103,7 +105,6 @@
 		width: 90%;
 	}
 	#footer{
-		/*padding-top: 5px;*/
 	}
 	#footer .content-info {
 		width: 70%;
@@ -111,8 +112,6 @@
 	#footer .content-info .phone {
 		float: none; 
 		margin: 0px auto;
-		/* margin-right: auto; */
-		/*width: 43%;*/
 	}
 	#footer .content-info .info {
 		float: none;
@@ -125,7 +124,6 @@
 		width: 9px;
 		display: block;
 		height: 37px;
-		/* float: right; */
 		cursor: pointer;
 		margin: 20px 20px;
 		position: absolute;
@@ -164,7 +162,6 @@
 		background: #fff;
 		position: absolute;
 		top: -5px;
-		/* height: 300px; */
 		overflow: hidden;
 		right: 0;
 	}
@@ -183,16 +180,16 @@
 		display: none;
 	}
 	#assets {
-		top: 0;
+		top: -23px;
 	}
 	.container_servicios {
-	height: auto;
-	width: 100%;
-	overflow: hidden;
+		height: auto;
+		width: 100%;
+		overflow: hidden;
 	}
 	.wrap-service {
-	width: 90%;
-	margin: 0 auto;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.info-servicios {
 		float: left;
@@ -201,8 +198,59 @@
 		.image-servicios {
 		width: 90%;
 	}
+	#assets .assets-home{
+		top: -20px;
+	}
+	.bienestar{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.estilo-info{
+		width: 80%;
+	}
+	.estilo-info .title{
+		width: 50%;
+		margin: 0 auto;
+		float: none;
+	}
+	.estilo-info .text {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		padding: 0;
+	}
+	#full-image{
+		height: 625px;
+	}
+	.article-post {
+		float: none; 
+		margin: 20px auto;
+	}
+	#contact_form {
+		width: 90%;
+		margin: 20px auto;
+	}
+	.item-form {
+		width: 90%;
+	}
+	.item-form input {
+		width: 75%;
+	}
+	.item-form textarea{
+		width: 75%;
+	}
+	#send_message {
+		float: none;
+		margin: 20px auto;
+	}
+	#wrap-content {
+		margin-top: 288px;
+	}
 }
 @media only screen and (max-width: 760px){
+	.search_button{
+		display: block;
+}
 	#header-article h4 {
 		width: 100%;
 	}
@@ -218,7 +266,7 @@
 	}
 	.column {
 		margin: 0 auto;
-		width: 40%;
+		width: 55%;
 	}
 	#sub-header{
 		height: 260px;
@@ -231,7 +279,6 @@
 		background: #fff;
 		position: absolute;
 		top: -5px;
-		/* height: 300px; */
 		overflow: hidden;
 		right: 0;
 	}
@@ -251,7 +298,6 @@
 		width: 9px;
 		display: block;
 		height: 37px;
-		/* float: right; */
 		cursor: pointer;
 		margin: 20px 20px;
 		position: absolute;
@@ -259,13 +305,12 @@
 		z-index: 2000;
 	}
 	#footer{
-		/*padding-top: 5px;*/
+
 	}
 	#footer .content-info .phone {
 		float: none; 
 		margin: 0px auto;
-		/* margin-right: auto; */
-		/*width: 73%;*/
+		
 	}
 	#footer .content-info {
 		width: 70%;
@@ -295,14 +340,44 @@
 		margin: 0 auto;
 	}
 	.info-servicios {
-	float: left;
-	width: 95%;
+		float: left;
+		width: 95%;
 	}
 	.image-servicios {
 		width: 90%;
 	}
+	#assets .assets-home{
+		top: -20px;
+	}
+	.bienestar{
+		width: 50%;
+		margin: 0 auto;
+	}
+	#contact_form {
+		width: 90%;
+		margin: 20px auto;
+	}
+	.item-form {
+		width: 90%;
+	}
+	.item-form input {
+		width: 75%;
+	}
+	.item-form textarea{
+		width: 75%;
+	}
+	#send_message {
+		float: none;
+		margin: 20px auto;
+	}
+	#wrap-content {
+		margin-top: 288px;
+	}
 }
 @media only screen and (max-width: 420px) {
+	.search_button{
+		display: block;
+}
 	#header-article h4 {
 		width: 100%;
 	}
@@ -327,8 +402,7 @@
 	}
 	#sub-header{
 		height: 260px;
-				z-index: -1;
-
+		z-index: -1;
 	}
 	.assets-home .main-assets{
 		width: 300px;
@@ -337,7 +411,6 @@
 		background: #fff;
 		position: absolute;
 		top: -5px;
-		/* height: 300px; */
 		overflow: hidden;
 		right: 0;
 	}
@@ -357,13 +430,13 @@
 		margin: 0 auto;
 		height: 100%;
 		position: fixed;
+		z-index: 11;
 
 	}
 	.menu-desktop .divide{
 		display: none;
 	}
 	.menu-responsive{
-		/*display: none;*/
 	}
 	.menu-desktop .menu-item .menu-link{
 		color: #fff;
@@ -383,10 +456,9 @@
 	#logotipo {
 		margin: 0px 3px;
 		padding: 0;
-		/* float: left; */
 		position: fixed;
 		top: 15px;
-		left: 43%;
+		left: 30%;
 	}
 	 .menu {
 		float: none;
@@ -396,7 +468,6 @@
 		width: 9px;
 		display: block;
 		height: 37px;
-		/* float: right; */
 		cursor: pointer;
 		margin: 20px 20px;
 		position: absolute;
@@ -414,11 +485,11 @@
 		background-position: center;
 	}
 	.slider-content {
-		width: 50%;
+		width: 80%;
 		margin: 0;
 		position: relative;
 		left: 10px;
-		top: 75px;
+		top: 55px;
 		}
 	.slider-content .slider-info {
 		width: 100%;
@@ -468,13 +539,10 @@
 		top: 0;
 	}
 	#footer{
-		/*padding-top: 5px;*/
 	}
 	#footer .content-info .phone {
 		 float: none; 
 		margin: 15px auto;
-		/* margin-right: auto; */
-		/*width: 73%;*/
 	}
 	#footer .content-info {
 		width: 70%;
@@ -491,15 +559,39 @@
 		overflow: hidden;
 	}
 	.wrap-service {
-	width: 90%;
-	margin: 0 auto;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.info-servicios {
-	float: left;
-	width: 95%;
+		float: left;
+		width: 95%;
 	}
 	.image-servicios {
 		width: 90%;
+	}
+	.bienestar{
+		width: 90%;
+		margin: 0 auto;
+	}
+	#contact_form {
+		width: 90%;
+		margin: 20px auto;
+	}
+	.item-form {
+		width: 90%;
+	}
+	.item-form input {
+		width: 75%;
+	}
+	.item-form textarea{
+		width: 75%;
+	}
+	#send_message {
+		float: none;
+		margin: 20px auto;
+	}
+	#wrap-content {
+		margin-top: 288px;
 	}
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
