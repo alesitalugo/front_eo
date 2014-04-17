@@ -9,24 +9,24 @@ var SITE = {
 			/*responsive functions */
 
 			var responsive = function(){
-				/*$('.menu_responsive_button').on('click', function(){
+				$('.menu_responsive_button').on('click', function(){
 				
 					if(menu_active == 0){
-						$('#main-menu').animate({'width':'40%'}, 800);
-						$('#wrapper').animate({'width':'60%'},800);
-						$('#logotipo').animate({'left': '23%'}, 800);
-						$('#header').animate({'width':'60%'},800);
+						$('#main-menu').animate({'width':'40%'}, 200);
+						$('#wrapper').animate({'width':'60%'},200);
+						$('#logotipo').animate({'left': '23%'}, 200);
+						$('#header').animate({'width':'60%'}, 200);
 						menu_active = 1;
 					} else if(menu_active == 1){
-						$('#main-menu').animate({'width':'0%'}, 800);
-						$('#wrapper').animate({'width':'100%'},800);
-						$('#logotipo').animate({'left': '43%'}, 800);
-						$('#header').animate({'width':'100%'},800);
+						$('#main-menu').animate({'width':'0%'}, 200);
+						$('#wrapper').animate({'width':'100%'},200);
+						$('#logotipo').animate({'left': '43%'}, 200);
+						$('#header').animate({'width':'100%'},200);
 						menu_active = 0;
 					}
 
 					console.log(menu_active);
-				});*/
+				});
 			}
 
 			if (width <= minWidth ){
