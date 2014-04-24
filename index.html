@@ -23,13 +23,55 @@
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
+        <div id="fb-root"></div>
+		<div id="fb-root"></div>
 
 	</head>
 	<body class="home_body">
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=484675214970317";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+				<div id="responsive_menu">
+					<ul class="responsive_menu">
+						<li class="item-responsive">
+							<a class="close_menu">cerrar</a>
+						</li>
+						<li class="item-responsive">
+							<a href="acerca.html">Acerca de mi</a>							
+						</li>
+						<li class="item-responsive">
+							<a href="servicios.html">Servicios</a>							
+						</li>
+						<li class="item-responsive">
+							<a href="nutricion.html">Nutrición</a>							
+						</li>
+						<li class="item-responsive">
+							<a href="bienestar.html">Bienestar</a>							
+						</li>
+						<li class="item-responsive">
+							<a href="estilodevida.html">Estilo de vida</a>							
+						</li>
+						<li class="item-responsive">
+							<a href="genteenequilibrio.html">Gente en equilibrio</a>							
+						</li>
+						<li class="item-responsive">
+							<a href="contacto.html">Contacto</a>							
+						</li>
+					</ul>
+				</div>
 		<div id="main-wrap">
 			<div id="header">
 				<div class="menu_responsive_button"></div>
+				
 				<a class="search_button"></a>
+				<div id="search_responsive">
+					<input type="text" id="search_input">
+					<button type="submit" id="search_button">
+				</div>
 				<div id="menubar">
 					
 					<nav id="main-menu">
@@ -144,19 +186,19 @@
 						<div id="social-networks">
 							<ul class="social">
 								<li class="item-social">
-									<a class="link-social" id="fb-social"></a>
+									<a href="https://www.facebook.com/equilibriorganico" target="_blank" class="link-social" id="fb-social"></a>
 								</li>
 								<li class="item-social">
-									<a class="link-social" id="tw-social"></a>
+									<a href="https://twitter.com/equilibriorg" target="_blank" class="link-social" id="tw-social"></a>
 								</li>									
 								<li class="item-social">
-									<a class="link-social" id="pt-social"></a>
+									<a  href="http://www.pinterest.com/eorganico/" target="_blank" class="link-social" id="pt-social"></a>
 								</li>									
 								<li class="item-social">
-									<a class="link-social" id="in-social"></a>
+									<a href="http://instagram.com/equilibrioorganico" target="_blank" class="link-social" id="in-social"></a>
 								</li>									
 								<li class="item-social">
-									<a class="link-social" id="yt-social"></a>
+									<a href="https://www.youtube.com/channel/UCiJ-gATaahzvYABkD2O5yCg" target="_blank" class="link-social" id="yt-social"></a>
 								</li>
 							</ul>
 							
@@ -174,22 +216,24 @@
 						<div id="container">
 							<div class="column">
 								<article class="article_post">
-									<div class="circle">
-										<img src="images/mask01.png" class="image_article">
-									</div>
-									<div class="category">
-										<div class="top"></div>
-											<h3>Nutrición</h3>
-										<div class="bottom"></div>
-									</div>
-									<div class="content_article">
-										<h4>Título Artículo</h4>
-										<p class="date">24·06·2014</p>
-										<p class="abstract">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua con ut consequat. 
-										</p>
+									<a href="article.html">
+										<div class="circle" id="circle_01">
+											<!--<img src="images/mask01.png" class="image_article">-->
+										</div>
+										<div class="category">
+											<div class="top"></div>
+												<h3>Nutrición</h3>
+											<div class="bottom"></div>
+										</div>
+										<div class="content_article">
+											<h4>Título Artículo</h4>
+											<p class="date">24·06·2014</p>
+											<p class="abstract">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua con ut consequat. 
+											</p>
 
-									</div>
+										</div>
+									</a>
 									<div class="button_more">
 										<a class="view-more" href="article.html">
 											<strong>
@@ -198,26 +242,28 @@
 											más
 											<span>
 												>
-											</span>
+											</span>											
 										</a>
 									</div>
 								</article>
 								<article class="article_post">
-									<div class="circle">
-										<img src="images/mask03.png" class="image_article">
-									</div>
-									<div class="category">
-										<div class="top"></div>
-											<h3>Bienestar</h3>
-										<div class="bottom"></div>
-									</div>
-									<div class="content_article">
-										<h4>Título Artículo</h4>
-										<p class="date">24·06·2014</p>
-										<p class="abstract">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua con ut consequat. 
-										</p>
-									</div>
+									<a href="article.html">
+										<div class="circle" id="circle_02">
+											<!--<img src="images/mask03.png" class="image_article">-->
+										</div>
+										<div class="category">
+											<div class="top"></div>
+												<h3>Bienestar</h3>
+											<div class="bottom"></div>
+										</div>
+										<div class="content_article">
+											<h4>Título Artículo</h4>
+											<p class="date">24·06·2014</p>
+											<p class="abstract">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua con ut consequat. 
+											</p>
+										</div>
+									</a>
 									<div class="button_more">
 										<a class="view-more" href="article.html">
 											<strong>
@@ -234,22 +280,24 @@
 							
 							<div class="column">
 								<article class="article_post">
-									<div class="circle">
-										<img src="images/mask04.png" class="image_article">
-									</div>
-									<div class="category">
-										<div class="top"></div>
-											<h3>Estilo de vida</h3>
-										<div class="bottom"></div>
-									</div>
-									<div class="content_article">
-										<h4>Título Artículo</h4>
-										<p class="date">24·06·2014</p>
-										<p class="abstract">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua con ut consequat. 
-										</p>
+									<a href="article.html">
+										<div class="circle" id="circle_03">
+											<!--<img src="images/mask04.png" class="image_article">-->
+										</div>
+										<div class="category">
+											<div class="top"></div>
+												<h3>Estilo de vida</h3>
+											<div class="bottom"></div>
+										</div>
+										<div class="content_article">
+											<h4>Título Artículo</h4>
+											<p class="date">24·06·2014</p>
+											<p class="abstract">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua con ut consequat. 
+											</p>
 
-									</div>
+										</div>
+									</a>
 									<div class="button_more">
 										<a class="view-more" href="article.html">
 											<strong>
@@ -263,22 +311,24 @@
 									</div>
 								</article>
 								<article class="article_post">
-									<div class="circle">
-										<img src="images/mask05.png" class="image_article">
-									</div>
-									<div class="category">
-										<div class="top"></div>
-											<h3>Gente en equilibrio</h3>
-										<div class="bottom"></div>
-									</div>
-									<div class="content_article">
-										<h4>Título Artículo</h4>
-										<p class="date">24·06·2014</p>
-										<p class="abstract">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua con ut consequat. 
-										</p>
+									<a href="article.html">
+										<div class="circle" id="circle_04">
+											<!--<img src="images/mask05.png" class="image_article">-->
+										</div>
+										<div class="category">
+											<div class="top"></div>
+												<h3>Gente en equilibrio</h3>
+											<div class="bottom"></div>
+										</div>
+										<div class="content_article">
+											<h4>Título Artículo</h4>
+											<p class="date">24·06·2014</p>
+											<p class="abstract">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua con ut consequat. 
+											</p>
 
-									</div>
+										</div>
+									</a>
 									<div class="button_more">
 										<a class="view-more" href="article.html">
 											<strong>
@@ -310,6 +360,8 @@
 										<h3>Síguenos en twitter</h3>
 									</div>
 									<div class="content-widget">
+										<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/equilibriorg" data-widget-id="458619433846439936">Tweets by @equilibriorg</a>
+										<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 									</div>
 								</div>
 								<div id="widget_in">
@@ -318,6 +370,7 @@
 										<h3>Pic del día</h3>
 									</div>
 									<div class="content-widget">
+										<iframe src="http://www.intagme.com/in/?u=ZXF1aWxpYnJpb29yZ2FuaWNvfGlufDMwMHwxfDF8fG5vfDB8dW5kZWZpbmVkfG5v" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:290px; height: 300px" ></iframe>										
 									</div>
 								</div>
 								<div id="widget_fb">
@@ -326,6 +379,7 @@
 										<h3>Facebook feed</h3>
 									</div>
 									<div class="content-widget">
+										<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fequilibriorganico&amp;width&amp;height=395&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=484675214970317" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:395px; width:290px; " allowTransparency="true"></iframe>	
 									</div>
 								</div>
 								<div id="widget_news">
@@ -341,6 +395,9 @@
 										<h3>compartir</h3>
 									</div>
 									<div class="content-widget">
+										<div class="fb-share-button" data-href="https://www.facebook.com/PanPlanoMx" data-type="button_count"></div>
+										<a href="https://twitter.com/equilibriorg" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+											<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 									</div>
 								</div>
 
@@ -355,7 +412,7 @@
 						
 						<div class="phone">
 							<span class="icon"></span>
-							<p>52.07.22.23</p>
+							<p>52.51.04.63</p>
 						</div>
 						<div class="info">
 							<p>© <b>2014</b> Equilibrio Orgánico</p>
@@ -366,6 +423,7 @@
 				<!--ENDFOOTER-->
 			</div>			
 		</div>
+
 		<script type="text/javascript" src="scripts/jquery.js">
 		</script>
 		<script type="text/javascript" src="scripts/jqueryeasing.js"></script>

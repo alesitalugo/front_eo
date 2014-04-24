@@ -2,36 +2,129 @@ var SITE = {
 
 	common: {
 		init: function(){
+			
+			var sb = 0;
 			var menu_active = 0;
 			var width = $(window).width();
 			var height  = $(window).height();
 			var minWidth = 980;
-			/*responsive functions */
+			
+			if (width <= 980){
+				$('.mask-pages').width('190px');
+			} else if(width >= 980){
+				$('.mask-pages').width('380px');
+			}
+			
+			function resize(){
+				width = $(window).width();
+				if (width <= 980){
+					$('.mask-pages').width('190px');
+				} else if(width >= 980){
+					$('.mask-pages').width('380px');
+				}
+			}
+			
+			$(window).resize(function(){
+				resize();
+			});	
 
-			var responsive = function(){
-				$('.menu_responsive_button').on('click', function(){
+			$('.search_button').on('click', function(){
+				if(sb == 0){
+					$('#search_input').focus();
+					$('#search_responsive').animate({'top':'0px'}, 100);
+					sb = 1;
+				} 
+			});
+			
+			$('.close_menu').on('click', function(){
+				$('#responsive_menu').show(function(){
+						$(this).animate({'width':'0%'},300);
+					});
+					$('body').animate({'left':'-0px'}, 300);
+					menu_active = 0;
+			});
+			
+			$('.menu_responsive_button').on('click', function(){
+				if (menu_active == 0){
+					$('#responsive_menu').show(function(){
+						$(this).animate({'width':'60%'},300);
+					});
+					$('body').animate({'left':'-192px'}, 300);
+					menu_active = 1;
+				} else if (menu_active == 1){
+					$('#responsive_menu').show(function(){
+						$(this).animate({'width':'0%'},300);
+					});
+					$('body').animate({'left':'-0px'}, 300);
+					menu_active = 0;
+				}
+			});			
+			
+			
+			var paginador = function(slide) {
+				var slide = slide;
+				var num_page = null;
+				var actual_page = 0;
+
+				var num_pages = $(slide).data('pages');
+				var actual_pages = 6;
+				var page_wrap = $('#paginador').find('.pages');
+				var pages = $(page_wrap).find('.page');
+
+				pages = $(pages[0]).outerWidth(true);
 				
-					if(menu_active == 0){
-						$('#main-menu').animate({'width':'40%'}, 200);
-						$('#wrapper').animate({'width':'60%'},200);
-						$('#logotipo').animate({'left': '23%'}, 200);
-						$('#header').animate({'width':'60%'}, 200);
-						menu_active = 1;
-					} else if(menu_active == 1){
-						$('#main-menu').animate({'width':'0%'}, 200);
-						$('#wrapper').animate({'width':'100%'},200);
-						$('#logotipo').animate({'left': '43%'}, 200);
-						$('#header').animate({'width':'100%'},200);
-						menu_active = 0;
-					}
-
-					console.log(menu_active);
-				});
+				return {
+					'init':function(){
+						if(num_pages !== null){
+							$(slide).find('.pages').width(num_pages * pages);
+						}
+					},
+					next_page: function(){
+						if( (actual_pages + 1) <= num_pages ){
+							actual_pages++;
+							$('.pages').stop().animate({'left':'-=63px'}, 100);
+						}
+						$('.next').show();
+						console.log(pages);
+						if(actual_pages === num_pages){
+							$('.prev').hide();
+						}
+					}, 
+					prev_page: function(){
+						
+						if ( (actual_pages - 1 ) >= 6){
+							
+							actual_pages--;
+							$('.pages').stop().animate({'left':'+=63px'}, 100);
+						}
+						$('.prev').show();
+						if((actual_pages) === 6){
+							$('.next').hide();
+						}
+					},
+				}
 			}
 
-			if (width <= minWidth ){
-				responsive();
-			} 
+			var paginator = new paginador(document.getElementById('paginador'));
+			
+			paginator.init();
+			
+			$('#paginador').on('click', '.next', function(e){
+					e.preventDefault();
+					paginator.prev_page();
+			});
+			
+			$('#paginador').on('click', '.prev', function(e){
+					e.preventDefault();
+					paginator.next_page();
+			});
+			
+			$('.page').on('click', function(){
+				$('.pages a').removeClass('active');
+				$(this).addClass('active');
+			});
+
+
 			/*CAROUSEL SLIDER HOME FUNCTION*/
 			
 			/*	var panels = $('#slider .slider-item'),
@@ -92,20 +185,18 @@ var SITE = {
 					return false;
 				});
 			});	
-				*/
+		*/
+			var news = 0;
 
 			$('#widget_news').on('click', function(){
-				$('#news').fadeIn(100);
+				if (news == 0){
+					$('#news').fadeIn(200);
+					news = 1;
+				} else if (news == 1){
+					$('#news').fadeOut(200);
+					news = 0;
+				}
 			});
-			
-			
-			/*$('.menu_active').on('click', function(){
-				$(this).removeClass('active');
-				$('#main-menu').animate({'width':'0%'}, 800);
-				$('#wrapper').animate({'width':'100%'},800);
-				$('#logotipo').animate({'left': '43%'}, 800);
-				$('#header').animate({'width':'100%'},800);
-			});*/
 
 		}
 
