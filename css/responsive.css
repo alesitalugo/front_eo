@@ -1,5 +1,8 @@
 /*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {*/
 @media only screen and (max-width: 980px){
+	#header{
+		position: absolute;
+	}
 	#paginador{
 		width: 285px;
 	}
@@ -39,8 +42,8 @@
 		width: 0%;
 		top:0;
 		background-color: #333;
-		position: fixed;
-		z-index: 2000;
+		position: absolute;
+		z-index: 999;
 		right: 0;
 	}
 	.menu-desktop {
@@ -64,9 +67,10 @@
 	#logotipo{
 		margin: 0px 3px;
 		padding: 0;
-		position: fixed;
-		top: 15px;
-		left: 33%;
+		position: absolute;
+		top: -45px;
+		left: -465px;
+		z-index: 3000 !important;
 	}
 	#content {
 		width: 100%;
@@ -177,13 +181,13 @@
 	}
 	.main-assets {
 		width: 300px;
-		float: none; 
-		height: 75px;
-		top: 0;
+		float: none;
+		height: 80px;
+		top: 130px;
 		overflow: hidden;
-		right: 0;
+		right: 230px;
 		margin: 0 auto;
-		position: relative;
+		/* position: relative; */
 	}
 	#search{
 		display: none;
@@ -321,13 +325,13 @@
 	}
 	.main-assets {
 		width: 300px;
-		float: none; 
-		height: 75px;
-		top: 0;
-		overflow: hidden;
-		right: 0;
-		margin: 0 auto;
-		position: relative;
+float: none;
+height: 80px;
+top: 130px;
+overflow: hidden;
+right: 230px;
+margin: 0 auto;
+/* position: relative; */
 	}
 	.menu_responsive_button{
 		background: url(../images/sprite01.png) no-repeat -386px -116px;

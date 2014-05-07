@@ -521,6 +521,8 @@ html, body{
 	padding: 10px;
 	float: left;
 	margin: 20px ;
+	height: 640px;
+	max-height: 650px;
 }
 .article_post a{
 	text-decoration: none;
@@ -742,7 +744,7 @@ p{
 	width: 100%;
 	background: #e6e7d5;
 }
-.line-center {
+/*.line-center {
    background: url('../images/sprite02.png') no-repeat -11px -120px;
 	width: 347px;
 	height: 82px;
@@ -758,6 +760,65 @@ p{
 }
 .titulo_seccion {
     font-family: 'AmericanTypewriter';
+	font-size: 1.4em;
+    text-transform: uppercase;
+}*/
+.line-left {
+    background-color: #DCDDCD;
+    float: left;
+    height: 50px;
+    width: 10%;
+    
+}
+
+
+.line-center {
+    background-color: #e6e7d5;
+    float: left;
+    height: 67px;
+    position: relative;
+    top: -28px;
+    width: 30%;
+    z-index: 1;
+    text-align:center;
+    line-height:67px;
+    -webkit-box-shadow: 0 20px 9px -21px #363636;
+	-moz-box-shadow:0 20px 9px -21px #363636;
+	box-shadow: 0 20px 9px -21px #363636;
+}
+
+.line-right {
+    background-color: #DCDDCD;
+    float: left;
+    height: 50px;
+    position: relative;
+    width: 60%;
+}
+
+.completedl,.completedr {
+    background: none repeat scroll 0 0 #E6E7D5;
+    height: 78px;
+    position: relative;
+    top: -28px;
+    width: 12px;
+    z-index: 1;
+}
+
+.completedl{
+	float:right;
+	background-image: url("../images/sprite02.png");
+    background-position: -20px 0;
+}
+
+.completedr{
+	float:left;
+	width:13px;
+	background-image: url("../images/sprite02.png");
+    background-position: -334px 0;
+}
+
+.titulo_seccion {
+     font-family: 'AmericanTypewriter';
 	font-size: 1.4em;
     text-transform: uppercase;
 }
@@ -874,7 +935,9 @@ p{
 }
 .sidebar-content{
 	background-color: #fff;
-	padding: 10px 0;
+	padding: 10px 0 0px;
+	height: auto;
+	min-height: 120px;
 }
 .related-item{
 	border-top: 1px dashed #a5dbd4;
@@ -1025,6 +1088,10 @@ strong{
 	border-bottom: 1px dotted #a5dbd4;
 	padding-bottom: 10px;
 }
+.contact_assets{
+	height: 150px;
+	margin: 10px 10px 0px;
+}
 .contact_assets .phone .icon {
 	background: url(../images/sprite01.png)-352px -266px;
 	width: 46px;
@@ -1058,6 +1125,8 @@ strong{
 	float: left;
 	padding-top: 15px;
 	padding-left: 10px;
+	width: 220px;
+	text-align: left;
 }
 .contact_assets .address{
 	clear: both;
